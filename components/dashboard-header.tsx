@@ -1,10 +1,19 @@
+import Image from 'next/image';
+
 export function DashboardHeader() {
   return (
     <div className="border-b border-border bg-card px-6 py-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
-            <div className="h-8 w-8 bg-primary" />
+            <Image
+              src="/Ford_logo_flat.svg.png"
+              alt="Ford Motor Company logo"
+              width={80}
+              height={80}
+              priority
+              className="h-10 w-auto"
+            />
             <div>
               <h1 className="font-mono text-sm font-semibold tracking-wider text-foreground">
                 FORD OTOSAN
